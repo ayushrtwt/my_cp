@@ -14,3 +14,15 @@ vector<int> v;
     vector<int> v3(5,20);
     vector<int> v4(v3);  // copy of v3(above vector)
 ```
+```cpp
+//iterator
+    vector<int>::iterator it =v.begin(); //v.begin points to the memory
+    it++;
+    cout<< *(it)<<" "; //using * to access value of the memory
+    
+    //different types of iterators
+    vector<int>::iterator it =v.end(); //points to the memory location right after the last element
+    vector<int>::iterator it =v.rend(); //reverse it then points to end
+    vector<int>::iterator it=v.rbegin(); //reverse it then points to begin
+    cout<<v.back(); //prints the last element
+```
