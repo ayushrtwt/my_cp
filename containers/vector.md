@@ -28,6 +28,7 @@ vector<int> v;
 ```
 
 ```cpp
+//Traversing vector(using iterator):
 for(vector<int>::iterator it= v.begin(); it!=v.end(); it++) {
         cout<< *it<<" ";
     }
