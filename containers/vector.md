@@ -26,3 +26,15 @@ vector<int> v;
     vector<int>::iterator it=v.rbegin(); //reverse it then points to begin
     cout<<v.back(); //prints the last element
 ```
+
+```cpp
+for(vector<int>::iterator it= v.begin(); it!=v.end(); it++) {
+        cout<< *it<<" ";
+    }
+    for(auto it = v.begin(); it!=v.end();it++){
+        cout<<*it<< " ";
+    }
+    for(auto it:v){
+        cout<<it<<" ";
+    }
+```
