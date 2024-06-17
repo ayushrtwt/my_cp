@@ -44,3 +44,9 @@ for(vector<int>::iterator it= v.begin(); it!=v.end(); it++) {
 v.erase(v.begin()+1); //giving the address to delete {1,3,4,5}
 v.erase(v.begin()+1,v.begin()+3); // {1,5}
 ```
+```cpp
+//insert function
+vector<int> v(2,100); //{100,100}
+v.insert(v.begin(),300); //{300,100,100}
+v.insert(v.begin()+1,2,10); //{300,10,10,100,100}
+```
