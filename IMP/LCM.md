@@ -1,0 +1,1 @@
+lcm(a,b) = a*b/ _gcd(a,b);
