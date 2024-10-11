@@ -1,0 +1,12 @@
+set autoindent
+filetype plugin indent on
+let mapleader = ","
+set number
+nmap <leader>c ggVG"+y''
+nnoremap <leader>r :w<CR>:! printf "noobiesAG your output is\n******************************************************************************************************************************************************************************************************************************************************************************\n" && g++ -std=c++1z -o test %:r.cpp && ./test && printf "***************************************************************************************************************************************\n"<CR>
+nnoremap <leader>f :w<CR>:! printf "noobiesAG your output from file is\n*************\n" &&  g++ -std=c++1z -o test %:r.cpp && ./test < input.txt && printf "*************\n"<CR>
+nnoremap <leader>t :w<CR>:! printf "noobiesAG your time of execution file is\n*************\n" &&  g++ -std=c++1z -o test %:r.cpp && time ./test < input.txt && printf "*************\n"<CR>
+nnoremap <leader>q :w<CR>:! printf "noobiesAG your output is \n*****************************************************************************************************************************************************************************************************************************************************************************\n" && python3 %:r.py<CR>
+nnoremap <leader>j :w<CR>:! printf "noobiesAG your output is \n*****************************************************************************************************************************************************************************************************************************************************************************\n" && node %:r.js<CR>
+"The only thing unique about my setup is my vimrc: https://pastebin.com/qMvFYGqb
+"https://codeforces.com/blog/entry/51726 can help
